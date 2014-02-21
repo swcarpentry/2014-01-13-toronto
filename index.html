@@ -1,25 +1,89 @@
 ---
 layout: bootcamp
-contact: james.maning@noaa.gov
-venue: Woods Hole Scientific Community
-address: Aquarium Conference Room, NOAA National Marine Fisheries Service, Woods Hole
-country: United-States
-humandate: Nov 14-15, 2013
-humantime: 9:00 - 16:30
-startdate: 2013-11-14
-enddate: 2013-11-15
-latlng: 41.526667,-70.663056
+root: .
+venue: Mozilla Toronto
+address: 366 Adelaide Street West, Toronto
+country: Canada
+humandate: Jan 13-14, 2014
+humantime: 8:45 am - 4:30 pm
+startdate: 2014-01-13
+enddate: 2014-01-14
+latlng: 43.64711,-79.39423
 registration: open
+instructor: ["Andromeda Yelton", "Chris Gray", "Victor Ng", "Greg Wilson"]
+contact: gvwilson@software-carpentry.org
 ---
-<p><strong>Where:</strong> Aquarium Conference Room, NOAA National Marine Fisheries Service, Woods Hole</p>
-<p><strong>When:</strong> November 14-15. We will start at 9:00 and end at 4:30 each day.</p>
-<p><strong>Registration</strong> for this boot camp <a href="https://www.eventbrite.ca/event/8427660359">is now open on Eventbrite</a>.</p>
+{% include bootcamps/instructors.html %}
 {% include bootcamps/what.html %}
 {% include bootcamps/who.html %}
-<p><strong>Helpers:</strong> Members of WHYTHON, the Woods Hole Python Users Group, will be on hand to assist participants.</p>
 {% include bootcamps/requirements.html %}
-<p>It's important that all participants install the required software. If you
-have trouble installing, please attend the WHYTHON meeting on Tuesday Nov 12th
-prior to the actual workshop. Email <a href="mailto:james.manning@noaa.gov">James Manning</a>
-for more information about the WHYTHON meeting.</p>
-{% include bootcamps/python.html %}
+<p>
+  <strong>Content:</strong> The syllabus for this boot camp will include:
+</p>
+<ul>
+  <li>using the Unix shell to do more in less time</li>
+  <li>basic Python programming</li>
+  <li>using version control to manage and share information</li>
+  <li>managing and structuring data with a database</li>
+</ul>
+{% include bootcamps/contact.html %}
+
+<hr/>
+
+<h2>Setup</h2>
+
+<div class="row-fluid">
+  <div class="span6">
+    {% include setup/overview-bash.html %}
+  </div>
+  <div class="span6">
+    {% include setup/overview-editor.html %}
+  </div>
+</div>
+
+<div class="row-fluid">
+  <div class="span6">
+    {% include setup/overview-python.html %}
+  </div>
+  <div class="span6">
+    {% include setup/overview-git.html %}
+  </div>
+</div>
+
+<h2>Windows</h2>
+
+<div class="row-fluid">
+  <div class="span6">
+    {% include setup/windows-bash.html %}
+    {% include setup/windows-editor.html %}
+  </div>
+  <div class="span6">
+    {% include setup/windows-python.html %}
+  </div>
+</div>
+
+<h2>Mac OS X</h2>
+
+<div class="row-fluid">
+  <div class="span6">
+    {% include setup/macosx-bash.html %}
+    {% include setup/macosx-git.html %}
+  </div>
+  <div class="span6">
+    {% include setup/macosx-editor.html %}
+    {% include setup/macosx-python.html %}
+  </div>
+</div>
+
+<h2>Linux</h2>
+
+<div class="row-fluid">
+  <div class="span6">
+    {% include setup/linux-bash.html %}
+    {% include setup/linux-git.html %}
+    {% include setup/linux-editor.html %}
+  </div>
+  <div class="span6">
+    {% include setup/linux-python.html %}
+  </div>
+</div>
